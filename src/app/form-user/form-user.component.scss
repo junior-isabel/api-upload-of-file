@@ -1,0 +1,33 @@
+.title {
+  margin: 0;
+}
+.form-user {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: flex;
+    cursor: pointer;
+    span {
+      margin-right: 10px;
+      font-weight: 900;
+    }
+    input {
+      flex: 1;
+    }
+  }
+  input, button {
+    border-style: none;
+    outline-style: none;
+
+  }
+  button[type=submit] {
+    height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #1976D2;
+    color: #fafafa;
+  }
+}

@@ -1,0 +1,12 @@
+<h1 class="title">Formulário de usuario</h1>
+<form [formGroup]="formUser" (ngSubmit)="onSubmit()" class="form-user">
+    <label for="name">
+        <span>Nome</span>
+        <input type="text" required maxlength="60" id="name" formControlName="name">
+    </label>
+    <label for="email">
+        <span>Email</span>
+        <input type="email" required maxlength="300" id="email" formControlName="email">
+    </label>
+    <button type="submit">Regista</button>
+</form>

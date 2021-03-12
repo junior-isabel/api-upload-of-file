@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'user-upload-pdf';
+
+  users = []
+  user = null
+  onSubmit (values) {
+    this.users.push(values)
+  }
+  onUserActive (user) {
+    this.user = user
+  }
 }
